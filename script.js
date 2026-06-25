@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Local audio file
   const musicTracks = [
-    "Ninna Notavu (Visualizer) _ @TanmayGururaj.mp3"
+    "ninna_notavu.mp3"
   ];
   let currentTrackIdx = 0;
 
@@ -453,11 +453,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const popPhotoData = [
     { src: 'assets/photo1.jpeg', caption: 'MBBS survival kit: 99% coffee, 1% hope ☕📚' },
     { src: 'assets/photo2.jpeg', caption: 'Chief sanity officer keeping me alive! 👯‍♀️💖' },
-    { src: 'assets/photo 3 .jpeg', caption: 'Practicing doctor prescription scribble 🩺✍️' },
-    { src: 'assets/photo 4.jpeg', caption: 'Post-anatomy lecture brain cell count: 0 🤯💀' },
-    { src: 'assets/photo 5 .jpeg', caption: 'Conspiring to skip tomorrow\'s 8 AM class 🤫🗓️' },
-    { src: 'assets/photo 6.jpeg', caption: 'Favorite Drama Queen / Future Cardiologist 🩺👸' },
-    { src: 'assets/photo 7.jpeg', caption: 'Doctor in progress (Handle with care!) 🏥🌸' }
+    { src: 'assets/photo3.jpeg', caption: 'Practicing doctor prescription scribble 🩺✍️' },
+    { src: 'assets/photo4.jpeg', caption: 'Post-anatomy lecture brain cell count: 0 🤯💀' },
+    { src: 'assets/photo5.jpeg', caption: 'Conspiring to skip tomorrow\'s 8 AM class 🤫🗓️' },
+    { src: 'assets/photo6.jpeg', caption: 'Favorite Drama Queen / Future Cardiologist 🩺👸' },
+    { src: 'assets/photo7.jpeg', caption: 'Doctor in progress (Handle with care!) 🏥🌸' }
   ];
 
   function triggerBalloonPop() {
