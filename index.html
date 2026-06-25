@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Karnika 💖🩺✨</title>
+  
+  <!-- SEO & Metadata -->
+  <meta name="description" content="A beautiful digital scrapbook celebration for Karnika's birthday, made with love by her brother Shubhay.">
+  
+  <!-- Google Fonts for Korean Aesthetic & Scrapbook Handwriting -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Delius&display=swap" rel="stylesheet">
+  
+  <!-- Styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOCK SCREEN COVER OVERLAY -->
+  <div class="lock-screen" id="lock-screen">
+    <div class="lock-screen-glow"></div>
+    <div class="lock-card">
+      <div class="lock-icon">🔒</div>
+      <h2 class="lock-title">Passcode Required</h2>
+      <p class="lock-subtitle">Unlock Shubhay's Scrapbook for Karnika 🩺🌸</p>
+      
+      <!-- Passcode dots -->
+      <div class="passcode-dots" id="passcode-dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      
+      <!-- Keypad -->
+      <div class="keypad">
+        <button class="key-btn" data-val="1">1</button>
+        <button class="key-btn" data-val="2">2</button>
+        <button class="key-btn" data-val="3">3</button>
+        <button class="key-btn" data-val="4">4</button>
+        <button class="key-btn" data-val="5">5</button>
+        <button class="key-btn" data-val="6">6</button>
+        <button class="key-btn" data-val="7">7</button>
+        <button class="key-btn" data-val="8">8</button>
+        <button class="key-btn" data-val="9">9</button>
+        <button class="key-btn key-action" id="key-clear">Clear</button>
+        <button class="key-btn" data-val="0">0</button>
+        <button class="key-btn key-action" id="key-back">⌫</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Glowing Elements & Particle Containers -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+  <div class="bg-particles" id="bg-particles"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- HEADER NAVIGATION -->
+  <header>
+    <div class="logo">
+      <svg class="stethoscope-logo" viewBox="0 0 100 100" width="40" height="40">
+        <path d="M50 30 C50 15, 30 15, 30 30 C30 45, 50 55, 50 65 C50 55, 70 45, 70 30 C70 15, 50 15, 50 30 Z" fill="#ff6b8b" />
+        <path d="M35 60 C35 75, 45 85, 50 85 C55 85, 65 75, 65 60" fill="none" stroke="#e05a86" stroke-width="4" stroke-linecap="round" />
+        <path d="M50 85 L50 95 M40 95 L60 95" fill="none" stroke="#e05a86" stroke-width="4" stroke-linecap="round" />
+      </svg>
+      <span class="logo-text">Karnika♥</span>
+    </div>
+    <nav>
+      <a href="#home" class="active">Home♥</a>
+      <a href="#memories">Memories</a>
+      <a href="#playlist">Playlist</a>
+      <a href="#surprises">Surprises</a>
+    </nav>
+    <button class="nav-btn open-surprise-trigger">Open Your Surprise ✉</button>
+  </header>
+
+  <main class="container" id="home">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      
+      <!-- HERO LEFT: TEXT, COUNTDOWN, BUTTONS -->
+      <div class="hero-left">
+        <div class="flower-sticker top-left-flower">🌸</div>
+        <h1 class="hero-title">
+          Happy Birthday <br>
+          <span class="highlight-name">Karnika 💖</span>
+        </h1>
+        <p class="hero-subtitle">To the most precious soul & future doctor 🩺✨</p>
+        <p class="hero-quote">"Your dedication today, heals the world tomorrow" 🩺💗</p>
+        
+        <!-- HERO BUTTONS -->
+        <div class="hero-actions">
+          <button class="btn btn-primary open-surprise-trigger">Open Your Surprise ✉</button>
+          <button class="btn btn-secondary" id="play-song-hero-btn">Play Our Song 🎵</button>
+          <button class="btn btn-secret" id="secret-surprise-btn">Secret Box 🤫</button>
+        </div>
+      </div>
+
+      <!-- HERO RIGHT: POLAROID & STICKY NOTES -->
+      <div class="hero-right">
+        <!-- Floating Stethoscope Graphic in background -->
+        <div class="stethoscope-bg">
+          <svg viewBox="0 0 200 200" width="180" height="180" opacity="0.15">
+            <path d="M30 60 C30 130, 170 130, 170 60" fill="none" stroke="#e05a86" stroke-width="4"/>
+            <path d="M100 110 L100 160 A20 20 0 0 0 120 180" fill="none" stroke="#e05a86" stroke-width="4"/>
+            <circle cx="120" cy="180" r="10" fill="#e05a86"/>
+            <circle cx="30" cy="50" r="8" fill="#e05a86"/>
+            <circle cx="170" cy="50" r="8" fill="#e05a86"/>
+          </svg>
+        </div>
+
+        <!-- Main Polaroid Frame -->
+        <div class="main-polaroid">
+          <div class="tape-pink"></div>
+          <div class="polaroid-img-wrapper">
+            <img src="assets/photo 7.jpeg" alt="Karnika Future Doctor" class="polaroid-main-img">
+          </div>
+          <div class="polaroid-caption">
+            Future Doctor <span class="heart-icon">❤</span>
+          </div>
+        </div>
+
+        <!-- Sticky Notes -->
+        <div class="sticky-note sticky-dream">
+          <div class="pin">📌</div>
+          <h4>Dream</h4>
+          <p>To heal</p>
+          <p>To comfort</p>
+          <p>To care 🩺</p>
+        </div>
+
+        <div class="sticky-note sticky-focus">
+          <div class="pin pin-blue">📌</div>
+          <h4>Focus</h4>
+          <p>Study hard</p>
+          <p>Stay kind</p>
+          <p>Keep growing 🌸</p>
+        </div>
+
+        <!-- Heartbeat ECG transition to Stethoscope sticker -->
+        <div class="ecg-line-sticker">
+          <svg viewBox="0 0 150 50" width="120" height="40" stroke="#e05a86" stroke-width="2" fill="none">
+            <path d="M0 25 H40 L45 10 L50 40 L55 20 L60 28 L65 25 H100 C110 25, 120 35, 120 45 C120 48, 118 50, 115 50 C112 50, 110 48, 110 45 C110 40, 120 20, 130 20 C140 20, 150 30, 150 40" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION: THINGS THAT MAKE YOU, YOU -->
+    <section class="personality-section">
+      <h2 class="section-title text-center">Things that make <span class="font-script">you</span>, YOU! ✨</h2>
+      
+      <div class="personality-grid">
+        <!-- Card 1 -->
+        <div class="personality-card">
+          <div class="card-icon-circle">
+            <!-- Book Icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#e05a86" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            </svg>
+          </div>
+          <h3>Loves Learning</h3>
+          <p>Books, notes, highlighters & endless curiosity</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="personality-card">
+          <div class="card-icon-circle">
+            <!-- Stethoscope Icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#e05a86" stroke-width="2">
+              <path d="M12 21a9 9 0 0 1-9-9V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5a3 3 0 0 0 6 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v8a9 9 0 0 1-9 9z" />
+              <path d="M12 12v6" />
+              <circle cx="12" cy="19" r="2" fill="#e05a86" />
+            </svg>
+          </div>
+          <h3>Future Doctor</h3>
+          <p>White coat dreams loading...</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="personality-card">
+          <div class="card-icon-circle">
+            <!-- Heart Icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="#e05a86">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <h3>Caring Heart</h3>
+          <p>Kindness that heals everything</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="personality-card">
+          <div class="card-icon-circle">
+            <!-- Star Icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#e05a86" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <h3>Ambitious Soul</h3>
+          <p>Big goals, clear mind & bright future</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="personality-card">
+          <div class="card-icon-circle">
+            <!-- Brain Icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#e05a86" stroke-width="2">
+              <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-3.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2zM14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-3.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2z" />
+            </svg>
+          </div>
+          <h3>Beautiful Mind</h3>
+          <p>Smart, focused & exceptionally strong</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: OUR LITTLE MEMORIES -->
+    <section class="memories-section" id="memories">
+      <h2 class="section-title">Our Little Memories 💗</h2>
+      
+      <!-- Polaroid Scrapbook Grid -->
+      <div class="memories-grid" id="memories-grid">
+        
+        <!-- Polaroid Card 1 -->
+        <div class="polaroid-card reveal-on-scroll" style="--rotation: -3deg;">
+          <div class="pin">📌</div>
+          <div class="polaroid-inner-img">
+            <img src="assets/photo1.jpeg" alt="Late night study sessions">
+          </div>
+          <div class="polaroid-caption">
+            MBBS survival kit: 99% coffee, 1% hope ☕📚
+            <span class="heart-sticker">💖</span>
+          </div>
+        </div>
+
+        <!-- Polaroid Card 2 -->
+        <div class="polaroid-card reveal-on-scroll" style="--rotation: 2deg;">
+          <div class="pin pin-blue">📌</div>
+          <div class="polaroid-inner-img">
+            <img src="assets/photo2.jpeg" alt="Notes, colors & calculations">
+          </div>
+          <div class="polaroid-caption">
+            Chief sanity officer keeping me alive! 👯‍♀️💖
+            <span class="heart-sticker">🌸</span>
+          </div>
+        </div>
+
+        <!-- Polaroid Card 3 -->
+        <div class="polaroid-card reveal-on-scroll" style="--rotation: -1.5deg;">
+          <div class="pin">📌</div>
+          <div class="polaroid-inner-img">
+            <img src="assets/photo 3 .jpeg" alt="One step closer to the white coat">
+          </div>
+          <div class="polaroid-caption">
+            Practicing doctor prescription scribble 🩺✍️
+            <span class="heart-sticker">🩺</span>
+          </div>
+        </div>
+
+        <!-- Polaroid Card 4 -->
+        <div class="polaroid-card reveal-on-scroll" style="--rotation: 3deg;">
+          <div class="pin pin-blue">📌</div>
+          <div class="polaroid-inner-img">
+            <img src="assets/photo 4.jpeg" alt="Breaks that made us laugh">
+          </div>
+          <div class="polaroid-caption">
+            Post-anatomy lecture brain cell count: 0 🤯💀
+            <span class="heart-sticker">😂</span>
+          </div>
+        </div>
+
+        <!-- Polaroid Card 5 -->
+        <div class="polaroid-card reveal-on-scroll" style="--rotation: -2deg;">
+          <div class="pin">📌</div>
+          <div class="polaroid-inner-img">
+            <img src="assets/photo 5 .jpeg" alt="Dreams in progress">
+          </div>
+          <div class="polaroid-caption">
+            Conspiring to skip tomorrow's 8 AM class 🤫🗓️
+            <span class="heart-sticker">🌙</span>
+          </div>
+        </div>
+
+        <!-- Polaroid Card 6 -->
+        <div class="polaroid-card reveal-on-scroll" style="--rotation: 1.5deg;">
+          <div class="pin pin-blue">📌</div>
+          <div class="polaroid-inner-img">
+            <img src="assets/photo 6.jpeg" alt="Sanity check">
+          </div>
+          <div class="polaroid-caption">
+            Diagnosing everyone with 'drama-itis' 🤒🩺
+            <span class="heart-sticker">💅</span>
+          </div>
+        </div>
+
+        <!-- Polaroid Card 7 -->
+        <div class="polaroid-card reveal-on-scroll" style="--rotation: -3deg;">
+          <div class="pin">📌</div>
+          <div class="polaroid-inner-img">
+            <img src="assets/photo 7.jpeg" alt="Dr Sister">
+          </div>
+          <div class="polaroid-caption">
+            Future MD (Master of Drama & Medicine) 🎓🌟
+            <span class="heart-sticker">👩‍⚕️</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: MUSIC PLAYER & QUOTES -->
+    <section class="interactive-dual-section" id="playlist">
+      
+      <!-- MUSIC PLAYER -->
+      <div class="music-player-card">
+        <span class="music-note-float">🎵</span>
+        <span class="music-note-float-2">🎶</span>
+        <h3 class="player-title">Our Vibe</h3>
+        <p class="player-subtitle">i could not get any thing els 😁😅</p>
+        
+        <div class="vinyl-container">
+          <div class="vinyl-record" id="vinyl-disc">
+            <div class="vinyl-center">
+              <img src="assets/photo2.jpeg" alt="Music Cover" class="vinyl-cover-art">
+            </div>
+          </div>
+        </div>
+
+        <div class="track-info">
+          <h4 class="track-name" id="track-name">Ninna Notavu 🎵</h4>
+          <p class="artist-name">Tanmay Gururaj</p>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="progress-container" id="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="time-display">
+          <span id="current-time">00:00</span>
+          <span id="total-time">03:45</span>
+        </div>
+
+        <!-- Controls -->
+        <div class="player-controls">
+          <button class="player-btn" id="prev-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <polygon points="19 20 9 12 19 4 19 20"/>
+              <line x1="5" y1="4" x2="5" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          
+          <button class="player-btn play-pause-btn" id="play-pause-btn">
+            <!-- Play icon (Triangle) -->
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" id="play-icon">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            <!-- Pause icon (Two vertical lines) - hidden by default -->
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" id="pause-icon" style="display:none;">
+              <rect x="6" y="4" width="4" height="16" />
+              <rect x="14" y="4" width="4" height="16" />
+            </svg>
+          </button>
+
+          <button class="player-btn" id="next-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <polygon points="5 4 15 12 5 20 5 4"/>
+              <line x1="19" y1="4" x2="19" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Hidden Audio Element -->
+        <audio id="bg-audio" loop></audio>
+      </div>
+
+      <!-- QUOTES CARD WITH ROTATING TEXT -->
+      <div class="quote-card">
+        <div class="flower-sticker bottom-right-flower">🌸</div>
+        <div class="quote-mark">“</div>
+        <div class="quote-content-wrapper">
+          <p class="quote-text" id="quote-text">Some people choose a profession, but you were born to heal. 💖 So proud of you, always! 💕</p>
+        </div>
+        <div class="quote-pagination">
+          <span class="quote-dot active" data-index="0"></span>
+          <span class="quote-dot" data-index="1"></span>
+          <span class="quote-dot" data-index="2"></span>
+          <span class="quote-dot" data-index="3"></span>
+          <span class="quote-dot" data-index="4"></span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- BOTTOM ROW: LETTER, MINI MOTIVATION, ACTIVITIES -->
+    <section class="bottom-scrapbook-row" id="surprises">
+      
+      <!-- A Little Note For You -->
+      <div class="note-container card-shadow">
+        <h3>A little note for you... ✉</h3>
+        <p class="note-description">
+          Karnika, you are not just studying to become a doctor, you are becoming someone's hope, someone's reason to smile, tomorrow. 🩺<br><br>
+          Keep going, the world needs more hearts like yours. <br>
+          <span class="highlight-handwriting">Always cheering for you, always.</span>
+        </p>
+        
+        <div class="envelope-graphics-wrapper open-surprise-trigger">
+          <div class="mini-envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body"></div>
+            <div class="heart-seal">💖</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mini Motivation sticky -->
+      <div class="sticky-note sticky-motivation">
+        <div class="pin">📌</div>
+        <div class="heart-sticker-note">💖</div>
+        <h4>Mini Motivation</h4>
+        <p class="motivation-text">
+          Keep going, keep glowing and keep becoming everything you dream of. ✨ <br><br>
+          The best is yet to come!
+        </p>
+      </div>
+
+      <!-- Today is all about YOU -->
+      <div class="activities-card card-shadow">
+        <h3>Today is all about YOU!</h3>
+        <div class="activities-grid">
+          
+          <div class="activity-item" data-toast="Take a deep breath and pamper yourself today! 🛁🌸">
+            <div class="activity-icon">🌸</div>
+            <span class="activity-label">Relax</span>
+          </div>
+
+          <div class="activity-item" data-toast="Time to throw some glitter and party! 🎉🎀">
+            <div class="activity-icon">🎁</div>
+            <span class="activity-label">Celebrate</span>
+          </div>
+
+          <div class="activity-item" data-toast="Your smile lights up the room. Stay happy! 😊💗">
+            <div class="activity-icon">😊</div>
+            <span class="activity-label">Be Happy</span>
+          </div>
+
+          <div class="activity-item" data-toast="Calories don't count on your birthday! 🎂🍰">
+            <div class="activity-icon">🍰</div>
+            <span class="activity-label">Eat Cake</span>
+          </div>
+
+          <div class="activity-item" data-toast="Let's capture every sweet second of today! 📸✨">
+            <div class="activity-icon">📸</div>
+            <span class="activity-label">Make Memories</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- GIFT SECTION -->
+    <section class="gift-section" id="gift-ideas">
+      <h2 class="section-title">Buy anything, I will pay for it 💖🛍️</h2>
+      
+      <!-- Amazon Search Card -->
+      <div class="gift-search-card card-shadow">
+        <h3>Search for any Gift on Amazon</h3>
+        <p>Type what you are looking for, and we will find it on Amazon for you!</p>
+        <div class="search-form">
+          <input type="text" id="gift-search-input" placeholder="Search stethoscope, scrubs, books, coffee mug..." aria-label="Search Amazon Gift">
+          <button id="gift-search-btn" class="btn btn-primary">Search Amazon 🔍</button>
+        </div>
+      </div>
+
+      <!-- Curated Suggestions Grid -->
+      <div class="gift-grid">
+        <!-- Gift Card 1 -->
+        <div class="gift-card card-shadow">
+          <div class="gift-icon">🩺</div>
+          <h4>Littmann Stethoscope</h4>
+          <p>The standard of excellence for medical students and doctors.</p>
+          <a href="https://www.amazon.in/s?k=Littmann+Classic+III+stethoscope" target="_blank" class="gift-link btn btn-secondary">View on Amazon 🛍️</a>
+        </div>
+
+        <!-- Gift Card 2 -->
+        <div class="gift-card card-shadow">
+          <div class="gift-icon">☕</div>
+          <h4>Insulated Travel Mug</h4>
+          <p>Keeps coffee piping hot through long hospital night shifts.</p>
+          <a href="https://www.amazon.in/s?k=insulated+coffee+mug+hot" target="_blank" class="gift-link btn btn-secondary">View on Amazon 🛍️</a>
+        </div>
+
+        <!-- Gift Card 3 -->
+        <div class="gift-card card-shadow">
+          <div class="gift-icon">👟</div>
+          <h4>Ergonomic Shoes</h4>
+          <p>Ultimate comfort for standing during long rounds and clinical rotations.</p>
+          <a href="https://www.amazon.in/s?k=comfortable+shoes+for+doctors" target="_blank" class="gift-link btn btn-secondary">View on Amazon 🛍️</a>
+        </div>
+
+        <!-- Gift Card 4 -->
+        <div class="gift-card card-shadow">
+          <div class="gift-icon">💼</div>
+          <h4>Stethoscope Case</h4>
+          <p>A protective and stylish carrying case for her stethoscope and penlights.</p>
+          <a href="https://www.amazon.in/s?k=stethoscope+case+holder" target="_blank" class="gift-link btn btn-secondary">View on Amazon 🛍️</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: MBBS FUN ZONE -->
+    <section class="fun-zone-section" id="fun-zone">
+      <h2 class="section-title text-center">MBBS Fun Zone 🩺🤪</h2>
+      <p class="section-subtitle text-center">Interactive sanity check & prescription generator!</p>
+
+      <div class="fun-zone-grid">
+        <!-- Widget 1: Stress Level Meter -->
+        <div class="fun-card card-shadow stress-meter-widget">
+          <h3>MBBS Stress Level Meter 🧠⚡</h3>
+          <p class="fun-card-desc">Click to add study hours and measure your current medical school stress level!</p>
+          
+          <div class="stress-display">
+            <div class="stress-emoji" id="stress-emoji">🌸</div>
+            <div class="stress-status" id="stress-status">Fresh MBBS Student</div>
+          </div>
+
+          <div class="stress-progress-container">
+            <div class="stress-progress-bar" id="stress-progress-bar" style="width: 0%;"></div>
+          </div>
+          
+          <div class="stress-metrics">
+            <span>Stress: <span id="stress-percentage">0%</span></span>
+            <span>Study Time: <span id="study-hours">0</span> hrs</span>
+          </div>
+
+          <div class="stress-controls">
+            <button class="btn btn-secondary btn-sm" id="btn-study-1">Study 1 Hour 📚</button>
+            <button class="btn btn-primary btn-sm" id="btn-study-8">Cram 8 Hours ☕</button>
+            <button class="btn btn-secret btn-sm" id="btn-stress-reset">Take a Nap 😴</button>
+          </div>
+          
+          <p class="stress-joke" id="stress-joke">"I have a heartbeat. That is the only medical diagnosis I can guarantee right now."</p>
+        </div>
+
+        <!-- Widget 2: Funny Diagnosis Generator -->
+        <div class="fun-card card-shadow diagnosis-widget">
+          <h3>Funny Diagnosis Generator 🏥📝</h3>
+          <p class="fun-card-desc">Select your current symptoms to get a real MBBS certified funny prescription!</p>
+          
+          <div class="symptom-checklist">
+            <label class="symptom-item">
+              <input type="checkbox" class="symptom-check" value="anatomy">
+              <span>Crying over Anatomy diagrams 💀</span>
+            </label>
+            <label class="symptom-item">
+              <input type="checkbox" class="symptom-check" value="coffee">
+              <span>Caffeine running in veins instead of blood ☕</span>
+            </label>
+            <label class="symptom-item">
+              <input type="checkbox" class="symptom-check" value="webmd">
+              <span>Diagnosing family members with rare diseases 🕵️‍♀️</span>
+            </label>
+            <label class="symptom-item">
+              <input type="checkbox" class="symptom-check" value="sleep">
+              <span>Sleeping with textbooks as pillows 😴</span>
+            </label>
+          </div>
+
+          <button class="btn btn-primary btn-block" id="btn-generate-diagnosis" style="margin-top: 15px; width: 100%;">Generate Prescription ✍️</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>Made with ❤️ by Shubhay</p>
+    </div>
+    <div class="footer-ecg">
+      <svg viewBox="0 0 100 40" width="80" height="30" stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" fill="none">
+        <path d="M0 20 H30 L35 5 L40 35 L45 15 L50 25 L55 20 H100"/>
+      </svg>
+    </div>
+  </footer>
+
+  <!-- FLOATING BALLOON SURPRISE TRIGGER -->
+  <div class="balloon-container" id="balloon-surprise-container">
+    <div class="balloon-string"></div>
+    <div class="balloon-body" id="balloon-body">
+      <span class="balloon-emoji">🎈</span>
+      <div class="balloon-sparkles">✨</div>
+    </div>
+    <div class="balloon-label">Pop Me! 🎀</div>
+  </div>
+
+  <!-- SURPRISE LETTER POPUP MODAL -->
+  <div class="modal-overlay" id="letter-modal">
+    <div class="letter-envelope-wrapper">
+      <button class="close-modal-btn" id="close-letter-btn">×</button>
+      
+      <div class="scrapbook-letter">
+        <div class="letter-flower">🌸</div>
+        <div class="letter-ribbon">🎀</div>
+        <h2 class="letter-title">Dear Karnika 💖</h2>
+        
+        <div class="letter-body">
+          <p>You are one of the strongest, kindest and most beautiful people I have ever known.</p>
+          <p>Watching you chase your dreams and work hard for MBBS makes me proud every single day. 🩺✨</p>
+          <p>May this birthday bring happiness, success and endless smiles. You are going to be an amazing doctor who heals with both skill and love!</p>
+          
+          <p class="letter-sign">Love always,<br><span class="handwritten-sign">Shubhay ❤️</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CORNER FLOATING PHOTOS (Pop out when a balloon is popped) -->
+  <div class="corner-photo top-left" id="fly-photo-1">
+    <div class="polaroid-card scale-down">
+      <div class="polaroid-inner-img">
+        <img src="assets/photo 6.jpeg" alt="Memory Favorite">
+      </div>
+      <div class="polaroid-caption">Favorite Drama Queen / Future Cardiologist 🩺👸</div>
+    </div>
+  </div>
+
+  <div class="corner-photo top-right" id="fly-photo-2">
+    <div class="polaroid-card scale-down">
+      <div class="polaroid-inner-img">
+        <img src="assets/photo 7.jpeg" alt="Memory Sister">
+      </div>
+      <div class="polaroid-caption">Doctor in progress (Handle with care!) 🏥🌸</div>
+    </div>
+  </div>
+
+  <div class="corner-photo bottom-left" id="fly-photo-3">
+    <div class="polaroid-card scale-down">
+      <div class="polaroid-inner-img">
+        <img src="assets/photo 4.jpeg" alt="Memory Chaos">
+      </div>
+      <div class="polaroid-caption">Pure unfiltered study chaos! 😂📚</div>
+    </div>
+  </div>
+
+  <div class="corner-photo bottom-right" id="fly-photo-4">
+    <div class="polaroid-card scale-down">
+      <div class="polaroid-inner-img">
+        <img src="assets/photo 3 .jpeg" alt="Memory Doctor">
+      </div>
+      <div class="polaroid-caption">Stethoscope looks good on you! 🩺✨</div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Confetti Canvas (rains over the actual page) -->
+  <canvas class="confetti-canvas" id="confetti-canvas"></canvas>
+
+  <!-- SECRET SURPRISE MODAL (Funny Picture) -->
+  <div class="modal-overlay" id="secret-modal">
+    <div class="secret-card-wrapper">
+      <button class="close-modal-btn" id="close-secret-btn">×</button>
+      <div class="secret-box-content">
+        <h2 class="secret-title">Secret Funny Box 🤪📦</h2>
+        <p class="secret-subtitle">Here is a little giggle for you...</p>
+        <div class="secret-img-container">
+          <img src="assets/secret_funny.jpg" alt="Funny Surprise" id="secret-funny-img" class="secret-img" style="display: block;">
+          <!-- Placeholder text before user uploads the image -->
+          <div class="secret-placeholder-text" id="secret-placeholder-text" style="display: none;">
+            <span class="lock-pulse">🤫</span>
+            <p>Waiting for the funny picture to load...</p>
+            <p class="sub-placeholder">Send me the funny picture in chat and I will insert it here!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRESCRIPTION MODAL -->
+  <div class="modal-overlay" id="rx-modal">
+    <div class="prescription-card card-shadow">
+      <button class="close-modal-btn" id="close-rx-btn">×</button>
+      <div class="rx-header">
+        <div class="rx-symbol">℞</div>
+        <div class="rx-title">
+          <h3>Dr. Karnika's Clinic</h3>
+          <p>Department of Sanity Maintenance</p>
+        </div>
+      </div>
+      <hr class="rx-divider">
+      <div class="rx-body">
+        <p><strong>Patient:</strong> Stressed MBBS Student 🩺</p>
+        <p><strong>Diagnosis:</strong> <span class="rx-highlight" id="rx-diagnosis">Acute Examitis & Anatomy Overload</span></p>
+        
+        <div class="rx-prescription">
+          <h4>Prescribed Treatment:</h4>
+          <ul id="rx-treatment-list">
+            <li>Take 1 hour of Kdrama twice daily after meals.</li>
+            <li>Inhale 8 hours of sleep continuously.</li>
+            <li>Strict avoidance of textbooks for the next 24 hours.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rx-footer">
+        <p class="rx-sign-text">Signed,</p>
+        <div class="rx-signature">Future Doctor Karnika 🩺💖</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio element for pop sound (optional synth backup used in JS) -->
+  <audio id="pop-sound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav" preload="auto"></audio>
+
+  <!-- Interactive toast notification -->
+  <div class="toast-notification" id="toast-notif">Toast message goes here!</div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
